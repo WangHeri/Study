@@ -16,5 +16,16 @@
 #     # 从5开始，到10结束（不包含10本身）的一个数字序列，数字之间的间隔是2
 #     print(x)
 
-for x in range(10):
-    print("送玫瑰花")
+# for x in range(10):
+#     print("送玫瑰花")
+
+
+# i = 0
+# for x in range(1,100):
+#     if x % 2 == 0:
+#         i += 1
+# print(f"一共{i}个偶数")
+i = 0
+for i in range(5):
+    print(i)
+print(i)
