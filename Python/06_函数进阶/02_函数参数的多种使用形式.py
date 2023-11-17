@@ -10,6 +10,7 @@ user_info('小明', 20, '男')
 user_info(name='小王', age=11, gender='女')
 user_info(age=10, gender='女', name='潇潇')    # 可以不按照参数的定义顺序传参
 user_info('甜甜', gender='女', age=9)
+# user_info("小王",age=25,"萧萧") 会报错，位置数必须在关键字参数前
 
 # 缺省参数（默认值）
 def user_info(name, age, gender):

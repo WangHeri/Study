@@ -12,3 +12,16 @@ print(f"字符串{my_str}被替换空格后，结果是：{new_my_str}")
 # 并按照"|"进行字符串分割，得到列表
 my_str_list = new_my_str.split("|")
 print(f"字符串{new_my_str}按照|分割后结果是：{my_str_list}")
+
+
+print("-------------------------------")
+
+st = "itheima itcast boxuegu"
+i = st.count("it")
+print(f"字符串{st}中有: {i}个it字符")
+
+i = st.replace(" ","|")
+print(f"字符串{st}，被替换空格后，结果: {i}")
+
+i = i.split("|")  #注意要对前面的被替换空格的进行分隔；
+print(f"字符串{st}，按照|分隔后，得到结果: {i}")

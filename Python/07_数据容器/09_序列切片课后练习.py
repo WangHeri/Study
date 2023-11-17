@@ -13,3 +13,15 @@ print(f"方式2结果：{result2}")
 # split分隔"，"  replace替换"来"为空，倒序字符串
 result3 = my_str.split("，")[1].replace("来", "")[::-1]
 print(f"方式3结果：{result3}")
+
+print("----------------------------")
+
+
+st1 = "万过薪月，员序程马黑来，nohtyP学"
+# st2 = st1[::-1]
+# print(st2)
+# st3 = st2[9:14:1]
+# print(st3)
+
+st4= st1.split("，")[1].replace("来","")[::-1]
+print(st4)

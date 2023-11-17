@@ -19,15 +19,15 @@
 
 # 自己写的
 
-money = 5000000
+money = 500
 name = input("请输入您的姓名:")
 
 def main():
-    print(f'{name},您好，欢迎来到源氏木语银行，请选择您的操作')
-    print("查询余额\t请输入：1")
-    print("存款\t\t请输入：2")
-    print("取款\t\t请输入：3")
-    print("退出\t\t请输入：4")
+    print(f'{name},您好，欢迎来到银行，请选择您的操作')
+    print("查询余额请输入：1")
+    print("存款\t请输入：2")
+    print("取款\t请输入：3")
+    print("退出\t请输入：4")
     result = input("请输入您的选择： ")
     return result
 
@@ -45,14 +45,21 @@ def qukuan():
     x = int(input("请输入你要取款的金额："))
     global money
     money = money - x
-    print("---------  ---------取款------------  ------")
-    print(f'{name},您好，您取款{x}元成功')  
-    print(f'{name},您好，您当前账户余额为：{money}元\n')
-    print()
+    if money >= 0:
+        print("---------  ---------取款------------  ------")
+        print(f'{name},您好，您取款{x}元成功')  
+        print(f'{name},您好，您当前账户余额为：{money}元\n')
+        print()
+    else:
+        money = money + x
+        print("---------  ---------取款------------  ------")
+        print(f'{name},您好，您取款{x}元失败，余额不足')
+        print(f'{name},您好，您当前余额{money}元')
+        print()
     
 # 存款函数
 def cunkuan():
-    x = int(input("请输入你要取款的金额："))
+    x = int(input("请输入你要存款的金额："))
     global money
     money = money + x
     print("---------  ---------存款------------  ------")

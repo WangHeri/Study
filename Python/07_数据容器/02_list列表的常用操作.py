@@ -51,7 +51,3 @@ count = len(mylist)
 print(f"列表的元素数量总共有：{count}个")
 
 
-
-
-
-
